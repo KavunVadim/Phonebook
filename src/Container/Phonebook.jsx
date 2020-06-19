@@ -25,12 +25,12 @@ const PhoneBook = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <>
       <TitleLogo logo={logo} />
       <ContactForm />
       <ContactFilter showFilter={contacts.length > 1} />
       <ContactList />
-    </div>
+    </>
   );
 };
 

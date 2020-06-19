@@ -6,13 +6,12 @@ import { List, Item } from "./ContactList.styles";
 import ContactItem from "../ContactItem/ContactItem";
 import { contactsFiltered } from "../../redux/selectors";
 
-const ContactList = ({ deleteContact }) => {
-  const contacts = useSelector((state) => state.contacts);
-  const filter = useSelector((state) => contactsFiltered(state));
+const ContactList = () => {
+  const filteredArr = useSelector((state) => contactsFiltered(state));
 
   return (
     <TransitionGroup component={List}>
-      {contacts.map((contact) => (
+      {filteredArr.map((contact) => (
         <Item key={contact.id}>
           <ContactItem contact={contact}></ContactItem>
         </Item>

@@ -16,7 +16,11 @@ const ContactFilter = ({ showFilter }) => {
     <Container in={showFilter}>
       <Lable htmlFor="name">
         Find contact by name
-        <Input type="text" value={filter} onChange={inputHandler} />
+        <Input
+          type="text"
+          value={filter}
+          onChange={(e) => inputHandler(e.target.value)}
+        />
       </Lable>
     </Container>
   );
