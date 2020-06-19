@@ -6,8 +6,8 @@ import { filterContact } from "../../redux/action/filter";
 import { getFilter } from "../../redux/selectors";
 
 const ContactFilter = ({ showFilter }) => {
-  const dispatch = useDispatch();
   const filter = useSelector((state) => getFilter(state));
+  const dispatch = useDispatch();
 
   const inputHandler = (e) => {
     dispatch(filterContact(e));

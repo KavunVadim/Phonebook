@@ -1,9 +1,19 @@
 {
   "contacts": [
     {
-      "name": "sdcf",
+      "name": "vadim",
+      "number": "234323",
+      "id": 3
+    },
+    {
+      "name": "vika",
+      "number": "324324",
+      "id": 4
+    },
+    {
+      "name": "dima",
       "number": "32423",
-      "id": 2
+      "id": 6
     }
   ]
 }

@@ -5,7 +5,7 @@ import {
   deleteContactError,
   getContactsError,
   resetError,
-} from "../actions/contacts";
+} from "../action/contacts";
 
 export default createReducer(false, {
   [addContactError]: () => true,
